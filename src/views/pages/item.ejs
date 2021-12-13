@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%-include ("../partials/head.ejs") %>
+</head>
+
+<body>
+    <header>
+
+        <div class="logo-top"><img src="./img/logo.jpeg" alt=""></div>
+        <div class="redes">
+            <a href="http://instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
+            <a href="http://facebook.com" target="blank"><i class="fab fa-facebook"></i></a>
+            <a href="http://twitter.com" target="blank"><i class="fab fa-twitter"></i></a></div>
+    </header>
+    <nav>
+        <%-include ("../partials/nav.ejs") %>
+    </nav>
+    <div class="producto">
+        <div class="card mb-3" style="max-width: 80%;">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <img src="./img/producto.jpg" class="img-fluid rounded-start" alt="imagen producto">
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Titulo Producto</h5>
+                        <p class="card-text">La descripción del producto será tomada desde la BD. Para esta etapa del proyecto se generó una sola página de producto genérica.</p>
+                        <p>
+                            <select class="form-select" aria-label="Color">
+                                <option value="1">Blanco</option>
+                                <option value="2">Gris</option>
+                                <option value="3">Roble</option>
+                                <option value="4">Nogal</option>
+                            </select></p>
+                        <p><label for="cantidad" class="form-label">Cantidad</label>
+                            <input type="number" class="form-control" id="cantidad" style="width: 100px;">
+                        </p>
+                        <p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" type="button">Agregar al Carrito
+                                </button>
+                            </div>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="logo-foot"><img src="./img/logo.jpeg" alt="logotipo"></div>
+        <div class="texto-foot">
+            <%-include ("../partials/foot-link.ejs") %>
+        </div>
+        <div class="copyright">Copyright Ignacio Dombald</div>
+    </footer>
+</body>
+
+</html>

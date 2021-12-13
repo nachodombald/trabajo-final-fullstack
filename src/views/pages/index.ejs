@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <%-include ("../partials/head.ejs") %>
+    </head>
+    <body>
+      <header>
+    
+        <div class="logo-top"><img src="/images/logo.jpeg" alt=""></div>
+        <div class="redes">
+                          <a href="http://instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
+                          <a href="http://facebook.com" target="blank"><i class="fab fa-facebook"></i></a>
+                          <a href="http://twitter.com" target="blank"><i class="fab fa-twitter"></i></a></div>
+    </header>
+        <nav>
+         <%-include ("../partials/nav.ejs") %>
+      </nav>
+        <div class="banner">
+            <img src="/images/banner-01.jpg" alt="banner gato en casa">
+        </div>
+        <div class="catalogo">
+          <% data.forEach((prod)=>{ %>
+                <div class="catalogo-item">
+                    <div class="card" style="width: 18rem;">
+                        <img src="<%= prod.imagen%>" class="card-img-top" alt="imagen producto">
+                        <div class="card-body">
+                          <h5 class="card-title"><%= prod.nombre %></h5>
+                          <p class="card-text"><%= prod.descripcion %></p>
+                          <p class="card-precio">$ <%= prod.precio %></p>
+                        </div>
+                      </div>
+                </div>  
+                <%})%>              
+        </div>
+        <footer>
+          <div class="logo-foot"><img src="/images/logo.jpeg" alt="logotipo"></div>
+          <div class="texto-foot">
+            <%-include ("../partials/foot-link.ejs") %>
+          </div>
+          <div class="copyright">Copyright Ignacio Dombald</div>
+      </footer>
+    </body>
+    </html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%-include ("../partials/head.ejs") %>
+</head>
+
+<body>
+  <header>
+
+      <div class="logo-top"><img src="/images/logo.jpeg" alt=""></div>
+      <div class="redes">
+                        <a href="http://instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
+                        <a href="http://facebook.com" target="blank"><i class="fab fa-facebook"></i></a>
+                        <a href="http://twitter.com" target="blank"><i class="fab fa-twitter"></i></a></div>
+  </header>
+  <nav>
+    <%-include ("../partials/nav.ejs") %>
+  </nav>
+
+  <div class="formulario">
+    <form method="POST" action="/consulta"> 
+        <label for="correo" class="form-label">Ingrese su Email</label>
+        <input type="correo" class="form-control" id="correo" name="correo">
+        <label for="mensaje" class="form-label">Ingrese su Comentario</label>
+        <textarea class="form-control" id="mensaje" name="mensaje" style="height: 100px"></textarea>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+  <footer>
+    <div class="logo-foot"><img src="/images/logo.jpeg" alt="logotipo"></div>
+    <div class="texto-foot">
+        <%-include ("../partials/foot-link.ejs") %> 
+    </div>
+    <div class="copyright">Copyright Ignacio Dombald</div>
+</footer>
+</body>
+
+</html>

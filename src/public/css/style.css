@@ -1,0 +1,145 @@
+header{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    font-weight: bold;
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+}
+.logo-top{
+    position: absolute;
+    left: 50px;
+}
+
+.logo{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:xx-large;
+    font-weight: bold;
+}
+.redes{
+    position: absolute;
+    right: 50px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.redes a{
+    text-decoration: none;
+    color: white;
+    padding: 0 5px 0 5px;
+}
+
+nav{
+    background-color: gray;
+    display: flex;
+    justify-content:left;
+    gap: 50px;
+    align-items: left;
+    padding-left: 100px;
+}
+.boton{
+    margin: 10px 0 10px 0;
+}
+.boton a{
+    color: white;
+    text-decoration: none;
+}
+.boton a:hover{
+    color: tomato;
+}
+
+.banner{
+    display: flex;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.catalogo{
+    width: 100%;    
+    display: flex;
+    justify-content:space-around; 
+    flex-wrap:wrap;
+    background-color: ghostwhite;
+    padding: 40px 0 40px 0;
+}
+
+.btn-primary{
+    background-color: rgb(255, 175, 71);
+    border-color: white;
+}
+footer{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    color: black;
+    display: flex;
+    align-items: center;
+    }
+    .logo-foot{
+        position: absolute;
+        left: 100px;    
+    }
+.logo-foot img{
+    height: 40px;
+}
+.texto-foot{
+    position: absolute;
+    right: 50px;
+    font-size: 15px;
+    font-weight: bold;   
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
+}
+    .copyright{
+    position: absolute;
+    left: 260px;
+    color: white;
+    font-size: xx-small;
+    }
+.foot-link a{
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+}
+.formulario{
+    background-color: ghostwhite;
+    padding: 50px 0 50px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formulario form{
+    width: 50%;
+}
+.formulario button{
+    margin-top: 20px;
+}
+
+.producto{
+    width: 100%;
+    padding: 40px 0 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-precio{
+    color:crimson;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+@media (max-width: 320px){
+
+}
+@media (max-width: 768px){
+    
+}
